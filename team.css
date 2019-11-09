@@ -1,0 +1,86 @@
+h1{
+            text-align: center;
+            border: 1px solid orange;
+            background-color: orange;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            padding: 10px;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .butt{
+            border-radius: 50%;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .butt1{
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+        #fl{
+            float: right;
+        }
+        .decoration{
+            text-decoration: line-through;
+        }
+<table id="tablea">
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>To Wake up at 6:00 in the morning.</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Ablutions</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Do exercises</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Eat breakfast</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Go to uni</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>After uni to go home</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Eat dinner</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Do homework</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Goes to bed at 11:00</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+</table>
