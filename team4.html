@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>Todo app</title>
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+<h1>My notes</h1>
+<br>
+<br>
+<br>
+
+<span><button class="butt1" onclick="third()"><img src="1.jpeg" width="30px" height="30px"></button></span>
+<span id="fl"><button><img src="2.jpeg" width="30px" height="30px"></button></span>
+    <table id="tablea">
+    <tr>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>To Wake up at 6:00 in the morning.</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Ablutions</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Do exercises</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Eat breakfast</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Go to uni</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>After uni to go home</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Eat dinner</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Do homework</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    <tr>
+        <td><button class="butt" onclick="first(event)"></button></td>
+        <td><p>Goes to bed at 11:00</p></td>
+        <td><button onclick="second(event)"><img src="2.jpeg"  width="30px" height="30px"></button></td>
+    </tr>
+    </table>
+</body>
+<script>
+function first(event) {
+    event.target.parentNode.parentNode.childNodes[3].className = "decoration";
+    }
+function second(event) {
+    event.target.parentNode.parentNode.parentNode.style.display = "none";
+}
+function third() {
+    "use strict";
+    var a = document.getElementById("tablea");
+    let x = document.createElement("TR");
+    
+    let b = document.createElement("TD");
+    let c = document.createElement("BUTTON");
+    c.className = "butt";
+    c.onclick = function(event){
+        event.target.parentNode.parentNode.childNodes[1].style.textDecoration = "line-through";
+    }
+    b.appendChild(c);
+    x.appendChild(b);
+    
+    let  q= document.createElement("TD");
+    let w = prompt("Please enter your plan", "Sleep");
+    let r = document.createTextNode(w);
+    let e = document.createElement("P");
+    e.appendChild(r);
+    q.appendChild(e);
+    x.appendChild(q);
+    
+    let t = document.createElement("TD");
+    let u = document.createElement("BUTTON");
+    u.onclick=function(event) {
+        event.target.parentNode.parentNode.parentNode.style.display = "none";
+    }
+    
+    let i = document.createElement("IMG");
+    i.src = "2.jpeg";
+    i.width = "30";
+    i.height = "30";
+    u.appendChild(i);
+    t.appendChild(u);
+    x.appendChild(t);
+    
+    a.appendChild(x);
+}
+</script>
+</html>
